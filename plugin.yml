@@ -1,0 +1,13 @@
+name: WorldUpdater
+main: AlicanCopur\WorldUpdater
+api: [3.9.0]
+version: 1.0
+author: AlicanCopur
+description: A plugin to convert Anvil format to PMAnvil.
+commands:
+  convert:
+    description: Convert Anvil worlds to PMAnvil.
+    permission: worldupdater.convert
+permissions:
+  worldupdater.convert:
+    default: op
