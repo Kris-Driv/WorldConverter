@@ -26,11 +26,8 @@ class WorldUpdater extends PluginBase {
 		$sender->sendMessage("Conversion successfully finished!");
 	}
 	public function convert($level): void{
-		//$this->getServer()->loadLevel($level);
 		$world = $this->getServer()->getLevelByName($level);
           if($world instanceof Level) $world->unload();
-		//$tiles = $world->getTiles();
-		//$world->unload();
 		$this->anvilToRegion($level);
 		$this->regionToPMAnvil($level);
 		$dir = $this->getServer()->getDataPath()."worlds/".$level."/region/";
@@ -42,14 +39,8 @@ class WorldUpdater extends PluginBase {
     		if($format == "mca" || $format == "mcr")
     			unlink($dir.$file);
 		}
-		$this->getServer()->loadLevel($level);
+		$this->getServer()->loadLevel($level); //Register tiles and entities
 		$world = $this->getServer()->getLevelByName($level);
-		//foreach($tiles as $tile){
-			//$nbt = $tile->saveNBT();
-			//$name = $tile->getName();
-			//Tile::createTile($name, $world, $nbt);
-               //$world->addTile($tile);
-		//}
 		$world->unload();
           $this->getServer()->loadLevel($level);
 	}
