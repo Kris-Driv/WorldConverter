@@ -6,8 +6,7 @@ use pocketmine\{
 	plugin\PluginBase,
 	command\Command,
 	command\CommandSender,
-	tile\Tile,
-     level\Level
+        level\Level
 };
 
 class WorldUpdater extends PluginBase {
