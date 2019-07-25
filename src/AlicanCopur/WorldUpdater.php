@@ -27,7 +27,7 @@ class WorldUpdater extends PluginBase {
 	}
 	public function convert($level): void{
 		$world = $this->getServer()->getLevelByName($level);
-          if($world instanceof Level) $world->unload();
+                if($world instanceof Level) $world->unload();
 		$this->anvilToRegion($level);
 		$this->regionToPMAnvil($level);
 		$dir = $this->getServer()->getDataPath()."worlds/".$level."/region/";
