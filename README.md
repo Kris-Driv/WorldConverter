@@ -9,3 +9,6 @@ Convert your Anvil (PC) worlds to PMAnvil (PMMP) worlds!
 # Note:
 > You must install Java in your server.
 > For Centos, type "yum install java"
+
+# Thanks:
+> Thanks @ImagicalCorp for convert Anvil to MCRegion and thanks @Awzaw for convert MCRegion to PMAnvil.
