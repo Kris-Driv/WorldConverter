@@ -1,6 +1,6 @@
 name: WorldUpdater
 main: AlicanCopur\WorldUpdater
-api: [3.9.0]
+api: [3.9.0, 4.0.0]
 version: 1.0
 author: AlicanCopur
 description: A plugin to convert Anvil format to PMAnvil.
